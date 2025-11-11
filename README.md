@@ -9,4 +9,4 @@ Olen tekemässä **TodoApp** sovellusta, jossa voidaan pitää kirjaa päivittä
 
 ## Dokumentaatio
 
-[Vaatimusmäärittely](docd/vaatimusmaarittely.md)
+[Vaatimusmäärittely](docs/vaatimusmaarittely.md)
