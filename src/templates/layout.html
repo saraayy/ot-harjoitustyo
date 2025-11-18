@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+  <h1>TodoApp</h1>
+
+  {% if session.username %}
+  <p>
+    Olet kirjautunut nimellä {{ session.username }}
+  </p>
+  {% endif %}
+
+  <p>
+    <a href = "/">Etusivu</a> |
+    <a href ="/logout">Kirjaudu ulos</a>
+    {% else %}
+      <a href ="/login">Kirjaudu sisään</a> |
+      <a href ="/register">Luo tunnus</a>
+    {% endif %}
+  </p>
+
+
+  {% block content %}{% endblock %}
+
+</body>
+
+</html>
